@@ -1,0 +1,252 @@
+@import "./mixin.scss";
+
+.apply-2022-choose-tenant {
+    min-width: 643px;
+    height: 643px;
+    padding: 31px 48px 0 48px;
+
+    .apply-2022-choose-tenant-title {
+        @include font-family-jd;
+        width: 100%;
+        height: 96px;
+        line-height: 96px;
+        font-size: 26px;
+        font-weight: normal;
+        color: rgba(51, 51, 51, 1);
+        text-align: center;
+
+        span {
+            position: relative;
+        }
+
+        i {
+            width: 24px;
+            height: 21px;
+            position: absolute;
+            left: -13px - 24px;
+            top: 3.5px;
+            background: transparent url(../assets/users.svg) no-repeat center;
+            background-size: 24px 21px;
+        }
+    }
+
+    .apply-2022-search-container {
+        height: 62px;
+        text-align: center;
+
+        .el-select {
+            .is-focus {
+                .el-input__inner {
+                    border: 1px solid rgba(60, 110, 240, 1);
+                }
+            }
+            .el-input__inner {
+                // height: 32px;
+                background: rgba(255, 255, 255, 1);
+                border: 1px solid #D9D9D9;
+                border-radius: 4px;
+            }
+
+            .el-select__caret {
+                transform: rotate(0);
+                text-align: center;
+                margin-right: 7px;
+                color: #999;
+
+                &::after {
+                    content: "\E778";
+                    color: #666666;
+                }
+            }
+
+            width: 643px;
+        }
+
+        .el-select-dropdown.el-popper {
+            border-radius: 4px;
+            margin-top: 2px;
+
+            .popper__arrow {
+                display: none;
+            }
+        }
+
+        .el-select-group__title {
+            text-align: left;
+            color: #999999;
+            padding-bottom: 6px;
+        }
+
+        .el-select-dropdown__item {
+            text-align: left;
+
+            &.selected,
+            .keyword {
+                color: #3C6EF0;
+            }
+        }
+
+        .apply-2022-choose-tenant-empty-message {
+            padding: 255px 10px 0 10px;
+            height: 321px;
+            background: transparent url(../assets/no-result.png) no-repeat center;
+            background-size: 317px 202px;
+            font-size: 16px;
+            color: #707784;
+            font-weight: normal;
+        }
+    }
+
+    .apply-2022-often-tenant {
+        .apply-2022-often-tenant-title {
+            width: 100%;
+            height: 22px;
+            font-size: 16px;
+            @include font-family;
+            color: #666666;
+            margin-bottom: 16px;
+        }
+
+        .apply-2022-tenant-card-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            flex-direction: row;
+            overflow-y: auto;
+            max-height: 380px;
+        }
+
+        .apply-2022-tenant-card {
+            width: 234px;
+            height: 244px;
+            text-align: left;
+            padding: 20px;
+            border-radius: 8px;
+            position: relative;
+            background: #F6F8FF url(../assets/other-tenant.png) no-repeat center;
+            background-size: 234px 244px;
+            margin-bottom: 25px;
+            margin-right: 25px;
+            cursor: pointer;
+
+            // &:nth-of-type(1) {
+            //     background-image: url(../assets/first-tenant.png);
+
+            //     .apply-2022-tenant-card-bgi {
+            //         background-image: url(../assets/first-tenant-hover.png);
+            //     }
+            // }
+
+            // &:nth-of-type(2) {
+            //     background-image: url(../assets/second-tenant.png);
+
+            //     .apply-2022-tenant-card-bgi {
+            //         background-image: url(../assets/second-tenant-hover.png);
+            //     }
+            // }
+
+            .apply-2022-tenant-card-main {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                bottom: 20px;
+                left: 20px;
+                z-index: 2;
+            }
+
+            .apply-2022-tenant-card-bgi {
+                transition: opacity 0.3s;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index: 1;
+                background: #3C6EF0 url(../assets/other-tenant-hover.png) no-repeat center;
+                background-size: 234px 244px;
+                opacity: 0;
+                border-radius: 8px;
+                overflow: hidden;
+            }
+
+            //  
+            &:hover {
+                .apply-2022-tenant-card-bgi {
+                    opacity: 1;
+                }
+
+                .apply-2022-tenant-card-title,
+                .apply-2022-tenant-card-code,
+                .apply-2022-tenant-card-name,
+                .apply-2022-tenant-card-buttons .el-button,
+                .apply-2022-tenant-card-buttons .el-button i {
+                    color: white;
+                }
+
+                .apply-2022-tenant-card-code {
+                    background-image: url(../assets/project-code.svg)
+                }
+
+                .apply-2022-tenant-card-name {
+                    background-image: url(../assets/edit.svg)
+                }
+            }
+
+            .apply-2022-tenant-card-title,
+            .apply-2022-tenant-card-code,
+            .apply-2022-tenant-card-name {
+                width: 194px;
+            }
+
+            .apply-2022-tenant-card-title {
+                // height: 21px;
+                height: 42px;
+                font-size: 20px;
+                line-height: 21px;
+                color: #333333;
+                @include text-overflow-line(2);
+                @include font-family-jd;
+            }
+
+            .apply-2022-tenant-card-code,
+            .apply-2022-tenant-card-name {
+                width: 100%;
+                height: 20px;
+                font-size: 14px;
+                color: #999999;
+                padding-left: 23px;
+                @include font-family;
+            }
+
+            .apply-2022-tenant-card-code {
+                margin-top: 16px;
+                margin-bottom: 10px;
+                background: url(../assets/project-code-d.svg) no-repeat 0 center;
+                background-size: 13px 15px;
+                @include text-overflow;
+            }
+
+            .apply-2022-tenant-card-name {
+                background: url(../assets/edit-d.svg) no-repeat 0 3px;
+                background-size: 13px 13px;
+                height: 80px;
+                line-height: 20px;
+                @include text-overflow-line(4);
+            }
+
+            .apply-2022-tenant-card-buttons {
+                margin-top: 15px;
+
+                .el-button {
+                    width: 56px;
+                    font-size: 14px;
+                    line-height: 14px;
+                    padding-top: 0;
+                }
+
+            }
+        }
+    }
+}

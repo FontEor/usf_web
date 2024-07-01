@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "JDLANGZHENGTI";
+    src: url("https://storage.jd.com/srceen/JDLZ.ttf");
+}
+
+@mixin font-family {
+    font-family: "PingFang SC", "Microsoft YaHei", "黑体",
+        "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+@mixin font-family-jd {
+    font-family: "JDLANGZHENGTI", "PingFang SC", "Microsoft YaHei", "黑体",
+        "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+@mixin text-overflow {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+    white-space: nowrap;
+}
+
+@mixin text-overflow-line($line: 2) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $line;
+    white-space: normal;
+    word-break: break-all;
+}
+
+@mixin over-cover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

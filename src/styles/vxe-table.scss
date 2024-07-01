@@ -1,0 +1,27 @@
+#app {
+    .vxe-table--render-default .vxe-cell--checkbox .vxe-checkbox--icon:before {
+        border-width: 1px;
+    }
+    .vxe-table {
+        .vxe-table--loading {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+    }
+    .disabled-checked {
+        .vxe-cell--checkbox.is--disabled {
+            .vxe-checkbox--icon::after{
+                content: "";
+                position: absolute;
+                height: 0.64em;
+                width: 0.32em;
+                top: 50%;
+                left: 50%;
+                border: 2px solid #c0c4cc;
+                border-left: 0;
+                border-top: 0;
+                -webkit-transform: translate(-50%,-50%) rotate(45deg);
+                transform: translate(-50%,-50%) rotate(45deg);
+            }
+        } 
+    }
+}

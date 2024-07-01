@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://storage.jd.com/print-plugin/javascript/jquery.min.js"></script>
+  <!-- 有用部分开始 -->
+  <script src="https://storage.jd.com/print-plugin/javascript/jquery.marquee.min.js"></script>
+  <style>
+    .marquee {
+      width: 100%;
+      overflow: hidden;
+      border: 1px solid #ccc;
+      font-size: 25px;
+      line-height: 40px;
+      background-color: #FFCF33;
+      height: 40px;
+    }
+    .marquee span {
+      color: red;
+      font-size: 30px; 
+    }
+  </style>
+  <!-- 有用部分结束 -->
+  <style>
+    /*
+    .marquee {
+      width: 100%;
+      overflow: hidden;
+      border:1px solid #ccc;
+      font-size: 30px;
+      line-height: 40px;
+      background-color: #24285b;
+      height: 40px;
+    }
+    :root {
+      --main-color-: #FF9900;
+    }
+    .stunt .marquee .js-marquee {
+      color: var(--main-color-);
+      -webkit-text-stroke: 1px #fff;
+      text-shadow: 0 0 1px #fff,
+                  0 0 2px #fff,
+                  0 0 3px #fff,
+                  0 0 4px var(--main-color-),
+                  0 0 7px var(--main-color-),
+                  0 0 8px var(--main-color-),
+                  0 0 10px var(--main-color-),
+                  0 0 15px var(--main-color-);
+    } */
+  </style>
+</head>
+<body>
+  <div class="stunt">
+    <div class='marquee'>【重要公告】--感谢大家对USF1.0/USF2.0的支持，<span>USF1.0/USF2.0将于2023年3月30日下线</span>，届时本页面将关闭，相关应用已迁移至USF3.0，请访问usf3.jdl.com继续使用！</div>
+  </div>
+  <script>
+    jQuery('.marquee').marquee({
+      //duration in milliseconds of the marquee
+      duration: 15000,
+      //gap in pixels between the tickers
+      gap: 50,
+      //time in milliseconds before the marquee will start animating
+      delayBeforeStart: 0,
+      //'left' or 'right'
+      direction: 'left',
+      //true or false - should the marquee be duplicated to show an effect of continues flow
+      duplicated: true
+    });
+    </script>
+</body>
+</html>

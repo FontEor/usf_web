@@ -1,0 +1,73 @@
+.apply-2022-pin-container {
+  h3 {
+    position: relative;
+  }
+  .apply-2022-pin-export-error {
+    position: absolute;
+    top: 2px;
+    right: 0;
+    padding: 0;
+  }
+  .apply-2022-info-toast {
+    margin-bottom: 16px - 4px;
+    padding-left: 17px;
+    height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #F4821F;
+    background: transparent url(../assets/message-info.svg) no-repeat 0 center;
+    background-size: 13px 13px;
+  }
+  .apply-2022-pin-content {
+    position: relative;
+    height: 112px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(217, 217, 217, 1);
+    border-radius: 4px;
+    padding: 10px 10px 0px 10px;
+    overflow: hidden;
+    .apply-2022-pin-compute {
+     clear: both;
+     display: inline-block;
+     vertical-align: top;
+    }
+    span {
+      float: left;
+      padding: 0 10px;
+      background: rgba(245, 245, 245, 1);
+      border-radius: 4px;
+      margin: 0 8px 10px 0;
+      max-width: 200px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      font-size: 12px;
+      font-weight: normal;
+      color: rgba(51,51,51,1);
+      line-height: 24px;
+    }
+    .apply-2022-pin-expand {
+      cursor: pointer;
+      position: absolute;
+      width: 66px;
+      height: 32px;
+      line-height: 28px;
+      right: 10px;
+      text-align: right;
+      bottom: 0;
+      color: #3C6EF0;
+      background-color: #fff;
+      border-radius: 4px;
+      .el-icon-arrow-down {
+        transform: rotate(0deg);
+        transition: transform 0.3s;
+      }
+    }
+    &.expand {
+      height: auto;
+      .el-icon-arrow-down {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}

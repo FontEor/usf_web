@@ -1,0 +1,45 @@
+/************** element-ui 样式重置 *******************/
+.el-cascader,
+.el-select,
+.el-input-number,
+.el-date-editor.el-input,
+.el-date-editor--date.el-input,
+.el-date-editor--datetime.el-input,
+.el-date-editor--daterange.el-input__inner,
+.el-date-editor--datetimerange.el-input__inner {
+    width: 100%;
+}
+// 这个影响到 旧版 菜单样式了 等下发设计图之后再调
+// .el-tooltip__popper.is-dark {
+//     max-width: 400px
+// }
+// .el-submenu .el-menu-item.is-active {
+//     background-color: #3C6EF0;
+//     &::after {
+//         content: " ";
+//         position: absolute;
+//         right: 0;
+//         top: 0;
+//         bottom: 0;
+//         width: 2px;
+//         background-color: $--sd-menu-active-border-color;
+//     }
+// }
+
+.basic-search {
+    .el-input__inner {
+        border-radius: 4px;
+    }
+    .el-button--small {
+        border-radius: 4px;
+    }
+}
+
+.autocomplete-norwap {
+    &.el-autocomplete-suggestion li {
+        max-width: 300px;
+        white-space: normal;
+        word-break: break-all;
+        height: auto;
+    }
+}

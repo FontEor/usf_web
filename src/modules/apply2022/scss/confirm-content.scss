@@ -1,0 +1,39 @@
+// 二次确认框样式
+.apply-2022-confirm-content {
+  p {
+      border-bottom: 1px solid #EAEAEA;
+      margin: 0 -15px;
+      padding: 31px 15px 38px 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+  }
+
+  .el-icon-warning {
+      margin-right: 8px;
+      color: #FA7B55;
+      font-size: 20px;
+  }
+}
+
+.apply-2022-confirm-content2 {
+  p {
+    border-bottom: 1px solid #EAEAEA;
+    margin: 0 -15px;
+    padding: 17px 15px 38px 52px;
+    color: #666666;
+    font-size: 14px;
+    position: relative;
+  }
+
+  .el-icon-warning {
+    margin-right: 8px;
+    color: #FA7B55;
+    font-size: 20px;
+    position: absolute;
+    left: 24px;
+    top: 18px;
+  }
+
+}

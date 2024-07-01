@@ -1,0 +1,135 @@
+.apply-2022-auth-choose-container {
+    padding-bottom: 60px;
+    .basic-dialog .el-dialog {
+        border-radius: 4px;
+    }
+    .basic-dialog .el-dialog__header {
+        // background-color: #fff;
+    }
+    .entity-dlg__block-bd.formFix .col-r {
+        padding-right: 0;
+        text-align: right;
+    }
+    .basic-dialog-ft {
+        text-align: right;
+        padding-right: 9px;
+    }
+    .el-dialog__footer {
+        .el-button.el-button--default {
+            display: none;
+        }
+        .el-button.el-button--primary {
+            width: 72px;
+            height: 32px;
+            background: rgba(60,110,240,1);
+            border-radius: 4px;
+            font-size: 14px;
+            padding: 8px 15px;
+        }
+    }
+}
+.apply-2022-auth-choose-c {
+    .vxe-table--empty-placeholder,
+    .vxe-table--empty-block {
+        display: none;
+    }
+    .apply-2022-auth-choose-list-c {
+        :last-child {
+            .show-pager-placeholder  {
+                display: none;
+            }
+        }
+            
+    }
+    .basic-list__hd {
+        height: 42px;
+        padding-top: 5px;
+    }
+    padding: 24px;
+    h3 {
+        height: 16px + 4px;
+        line-height: 20px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #000000;
+        padding-left: 28px;
+        background: url(../assets/waybill-info.svg) no-repeat 0 center;
+        background-size: 18px 16px;
+        margin-bottom: 13px;
+        a {
+            margin-left: 16px;
+            font-size: 14px;
+            font-family: PingFang SC;
+            font-weight: normal;
+            color: #3C6EF0;
+        }
+    }
+    .vxe-table--render-default.border--inner .vxe-header--column {
+        background-color: #F1F4F9;
+    }
+    .vxe-header--row .vxe-cell--title{
+        font-size: 14px;
+        font-weight: 500;
+        color: #333;
+    }
+    .vxe-table--render-default.border--inner .vxe-body--column {
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+    .vxe-pager.is--border:not(.is--background) .vxe-pager--prev-btn,
+    .vxe-pager.is--border:not(.is--background) .vxe-pager--next-btn,
+    .vxe-pager.is--border:not(.is--background) .vxe-pager--num-btn {
+        min-width: 32px;
+        height: 32px;
+        line-height: 28px;
+        border-color: #D9D9D9;
+        color: #666666;
+        font-size: 14px;
+        font-weight: normal;
+        box-shadow: none;
+        &.is--active {
+            background-color: #3C6EF0;
+            border-color: #3C6EF0;
+            color: white;
+        }
+    }
+
+    .vxe-pager.is--border:not(.is--background) .vxe-pager--prev-btn,
+    .vxe-pager.is--border:not(.is--background) .vxe-pager--next-btn {
+        font-size: 12px;
+    }
+    .vxe-pager.is--border:not(.is--background) .vxe-pager--jump-prev,
+    .vxe-pager.is--border:not(.is--background) .vxe-pager--jump-next {
+        border: none;
+        box-shadow: none;
+    }
+    .vxe-pager .vxe-input--inner,
+    .vxe-pager .vxe-pager--goto {
+        height: 32px;
+    }
+    .vxe-pager .vxe-pager--wrapper {
+        .vxe-pager--total {
+            float: left;
+            height: 32px;
+            line-height: 32px;
+        }
+    }
+    .el-button.el-button--text {
+        color: #3C6EF0;
+        font-weight: normal;
+    }
+    .apply-2022-auth-choose-add {
+        width: 100%;
+        height: 47px;
+        background: #FFFFFF;
+        border: 1px dashed #D9D9D9;
+        border-radius: 4px;
+        margin-top: 9px;
+        color: #3C6EF0;
+        font-size: 14px;
+        font-weight: normal;
+        &:hover {
+            border-color: #3C6EF0;
+        }
+    }
+}

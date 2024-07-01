@@ -1,0 +1,12 @@
+@mixin font-family {
+    font-family: "PingFang SC","Hiragino Sans GB","Microsoft YaHei","\5FAE\8F6F\96C5\9ED1",Arial,sans-serif;
+}
+
+@mixin overflow-two-line {
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important;
+    /*! autoprefixer: off */
+    -webkit-box-orient: vertical !important;
+}

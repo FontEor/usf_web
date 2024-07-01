@@ -1,0 +1,24 @@
+.vxe-table-toolbar-pagination {
+    border: 1px solid #e8ecef;
+    border-bottom: none;
+    background: #fcfcfc;
+    .page-count {
+        font-weight: normal;
+    }
+    .vxe-buttons--wrapper {
+        justify-content: flex-end;
+    }
+    .el-pagination__jump {
+        margin-left: 0;
+        .el-input__inner {
+            border-radius: 4px;
+        }
+    }
+    .el-pagination__sizes {
+        .el-select {
+            .el-input {
+                width: 60px;
+            }
+        }
+    }
+}

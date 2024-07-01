@@ -1,0 +1,129 @@
+.taggle-container {
+  width: 800px;
+  height: 122px;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  position: relative;
+  padding: 4px 8px;
+
+  .taggle-badge {
+    position: absolute;
+    right: 14px;
+    bottom: 4px;
+    height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #d9d9d9;
+  }
+
+  .textarea {
+    width: 100%;
+    height: 300px;
+    border: 1px solid red;
+  }
+
+  .taggle_list {
+    float: left;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .taggle_input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  .taggle_list li {
+    float: left;
+    display: inline-block;
+    white-space: nowrap;
+    font-weight: 500;
+    margin-bottom: 5px;
+
+    // height: 24px;
+  }
+
+  .taggle_list .taggle {
+    color: #333333;
+    font-size: 12px;
+    line-height: 18px;
+    margin-right: 8px;
+    background: #F5F5F5;
+    padding: 3px 25px 3px 8px;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    transition: all .3s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    .close {
+      font-size: 1.1rem;
+      position: absolute;
+      top: 6px;
+      right: 7px;
+      text-decoration: none;
+      padding: 0;
+      line-height: 0.5;
+      color: white;
+      background-color: #B5B5B5;
+      padding-bottom: 4px;
+      border: 0;
+      cursor: pointer;
+      width: 13px;
+      height: 13px;
+      border-radius: 100px;
+      font-size: 6px;
+      line-height: 14px;
+      text-align: center;
+    }
+    &.taggle-error {
+      color: #E1251B;
+      background-color: rgba(225,37,27,0.1);
+      .close {
+        background-color: #E1251B;
+      }
+    }
+  }
+
+  .taggle_list .taggle_hot {
+    background: #cac8c4;
+  }
+
+  .taggle_placeholder {
+    position: absolute;
+    color: #B5B5B5;
+    top: 4px;
+    left: 8px;
+    height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    user-select: none;
+  }
+
+  .taggle_input {
+    padding: 8px;
+    padding-left: 0;
+    float: left;
+    margin-top: -5px;
+    background: none;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .taggle_sizer {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: -500px;
+    z-index: -1;
+    visibility: hidden;
+  }
+
+}

@@ -1,0 +1,37 @@
+.apply-2022-write-help-c {
+    position: fixed;
+    right: 0;
+    bottom: 72px + 51px;
+    width: 85px;
+    height: 82px;
+    cursor: pointer;
+
+    .apply-2022-write-help,
+    .apply-2022-write-help-cover {
+        width: 85px;
+        height: 82px;
+        background: url(../assets/write-helper.png) no-repeat 7px bottom;
+        background-size: 85px 82px;
+    }
+    &:hover {
+        .apply-2022-write-help {
+            .apply-2022-write-help-cover {
+                opacity: 1;
+            }
+        }
+    }
+    .apply-2022-write-help {
+        margin-right: 0;
+        .apply-2022-write-help-cover {
+            @include over-cover;
+            background-image: url(../assets/write-helper-hover.png);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+    }
+    .el-button {
+        @include over-cover;
+        z-index: 2;
+        opacity: 0;
+    }
+}

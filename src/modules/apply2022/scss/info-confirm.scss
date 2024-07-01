@@ -1,0 +1,220 @@
+.apply-2022-info-container {
+    padding: 19px 24px 24px;
+    min-width: 950px;
+    border-radius: 4px;
+    background-color: #fff;
+    &:first-child{
+        margin-bottom: 16px;
+    }
+
+    .apply-2022-info-data-container {
+        h2 {
+            font-size: 16px;
+            height: 16px;
+            line-height: 16px;
+            font-weight: 600;
+            color: #000000;
+            padding-left: 28px;
+            background: transparent url(../assets/waybill-info.svg) no-repeat 0 center;
+            background-size: 18px 16px;
+            margin-bottom: 16px;
+        }
+
+        .apply-2022-info-data-content {
+            .apply-2022-info-data {
+                font-size: 14px;
+                line-height: 20px;
+                color: #333333;
+                margin-bottom: 16px;
+                display: flex;
+
+                span {
+                    font-size: 14px;
+                    font-weight: normal;
+                    color: #666666;
+                    word-break: keep-all;
+                }
+            }
+        }
+
+        .apply-2022-info-toast {
+            margin-bottom: 16px - 4px;
+            padding-left: 17px;
+            height: 20px;
+            font-size: 14px;
+            line-height: 20px;
+            color: #F4821F;
+            background: transparent url(../assets/message-info.svg) no-repeat 0 center;
+            background-size: 13px 13px;
+        }
+
+        .apply-2022-choose-hard {
+            width: 210px;
+            height: 20px;
+            font-size: 14px;
+            line-height: 20px;
+            color: #999999;
+            margin-right: 16px;
+        }
+
+        .apply-2022-info-buttons {
+            text-align: right;
+        }
+
+        // .apply-2022-self-apply-button {
+        //     font-size: 14px;
+        //     line-height: 14px;
+        //     font-weight: normal;
+        //     color: #333333;
+        //     background: #fff url(../assets/lock.svg) no-repeat 14px 7px;
+        //     background-size: 17px 17px;
+        //     padding-left: 14px + 17px + 7px;
+        //     border-radius: 4px;
+        //     transform: translateY(-1px);
+        //     &.active {
+        //         border-color: #4081F5;
+        //     }
+        // }
+
+        .apply-type .el-radio.el-radio--large {
+            width: 240px;
+            height: 51px;
+            padding-top: 4px;
+            padding-bottom: 9px;
+            padding-left: 38px;
+            border-radius: 4px;
+            margin-right: 10px;
+            .el-radio__input {
+                position: absolute;
+                top: 18px;
+                left: 16px;
+            }
+            .el-radio__label {
+                font-size: 14px;
+                line-height: 24px;
+                font-weight: normal;
+                color: #333333;
+                padding-left: 0;
+            }
+            p {
+                font-size: 12px;
+                line-height: 14px;
+                color: #666666;
+            }
+            &.is-checked {
+                .apply-2022-self-apply-badge {
+                    background-color: #4081F5;
+                }
+            }
+        }
+        .apply-2022-self-apply-badge {
+            position: absolute;
+            right: 0;
+            top: 0;
+            border-radius: 0 0 0 4px;
+            width: 61px;
+            height: 20px;
+            text-align: center;
+            color: white;
+            background-color: #CCCCCC;
+            > span {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                font-size: 12px;
+                transform: scale(0.9) translateY(-1.5px);
+                transform-origin: top center;
+                display: inline-block;
+            }
+        }
+        .apply-method {
+            .el-radio {
+                width: 110px;
+                height: 32px;
+                background: white;
+                border: 1px solid #CCCCCC;
+                border-radius: 4px;
+                padding-left: 16px;
+                padding-top: 0px;
+                line-height: 30px;
+                margin-right: 20px;
+                margin-left: 0;
+                .el-radio__label {
+                    font-size: 14px;
+                    color: #666666;
+                    font-weight: normal;
+                    padding-left: 8px;
+                }
+                &.is-checked {
+                    border-color: #3C6EF0;
+                    .el-radio__label {
+                        color: #3C6EF0;
+                    }
+                }
+                .el-radio__input {
+                    margin-top: -1px;
+                }
+            }
+        }
+    }
+    .el-radio__inner::after {
+        width: 6px;
+        height: 6px;
+    }
+
+    .ml--14px {
+        margin-left: -14px;
+    }
+
+    .apply-clew-alert {
+        color: #F4821F;
+        padding-left: 17px;
+        height: 20px;
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 4px;
+        position: relative;
+        &::before {
+            content: " ";
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            background: url("../assets/warning-icon.png") no-repeat center;
+            background-size: 14px 14px;
+            left: 0;
+            top: 50%;
+            margin-top: -7px;
+        }
+    }
+
+    @import "./tag-textarea.scss";
+
+    .apply-2022-info-apply-reason {
+        width: 100%;
+        display: flex;
+        .el-form-item__content {
+            flex: 1;
+        }
+    }
+    .template-buttons {
+        .el-button + .el-button {
+            margin-left: 20px;
+        }
+        .el-button {
+            width: 110px;
+            font-size: 14px;
+            color: #666666;
+            font-weight: normal;
+            padding: 8px 15px;
+        }
+        .template-buttons-upload {
+            display: inline-block;
+            margin-left: 20px;
+        }
+    }
+    .import-warning-message {
+        line-height: 15px;
+    }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN" translate="no">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- <link rel="icon" href="<%= BASE_URL %>favicon.ico"> -->
+    <link rel="icon" href="/static/susf.ico">
+    <style>
+
+        /* 弹窗文字样式 */
+        .basic-dialog .el-dialog__header{
+            padding: 18px  30px !important;
+            background-color: #f5f7fa;
+        }
+        /* 外侧背景色 */
+        /* .layout .g-mn{
+            background-color: #f3f7ff !important;
+        } */
+        /* 内侧背景色 */
+        .el-tabs__nav-scroll{
+            background-color: #f3f7ff !important;
+        }
+        /* 表头颜色 */
+        .el-table th{
+            background-color: #e8ecef;
+        }
+
+        #app .el-table .cell {
+            white-space: pre-wrap;
+        }
+
+        #app .el-table .cell .el-tooltip {
+            white-space: pre-wrap;
+        }
+        @font-face {
+            font-family: "element-icons";
+            src: url(https://storage.jd.com/srceen/element-icons.woff) format("woff"),
+                url(https://storage.jd.com/srceen/element-icons.ttf) format("truetype");
+        }
+    </style>
+    <title>4pl-front</title>
+    <script src="/static/jdJsencrypt.min.js"></script>
+    <!-- <script type="text/javascript" src="//misc.360buyimg.com/user/myjd/safe/m/0.0.1/js/jdJsencrypt.min.js"></script> -->
+</head>
+
+<body>
+    <noscript>
+        <strong>We're sorry but 4pl-front doesn't work properly without JavaScript enabled. Please enable it to
+            continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <div style="font-family: element-icons;width: 0;height: 0;/* overflow: hidden; */position: fixed;top: -20px;left: 0px;font-size: 12px;">11</div>
+    <!-- built files will be auto injected -->
+</body>
+<script src="//o-gia.jd.com/js/beetle.min.js" type="text/javascript"></script>
+<script type="application/javascript">
+    setTimeout(function () {
+        //设备指纹开始
+        try {
+            getJdEid(function (eid, fp) {
+                //document.getElementById("fp").value=eid;
+            });
+        } catch (e) {
+            console.log(e);
+        }
+        //设备指纹结束
+    }, 1000);
+</script>
+
+</html>

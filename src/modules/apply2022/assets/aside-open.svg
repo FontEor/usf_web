@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="42px" viewBox="0 0 12 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-侧边展开@4x</title>
+    <defs>
+        <path d="M5.25,4.42504209 L0.995812289,0.170854378 C0.768006452,-0.0569514592 0.398660214,-0.0569514592 0.170854378,0.170854378 C-0.0569514592,0.398660214 -0.0569514592,0.768006452 0.170854378,0.995812289 L4.83752104,5.66247896 C5.06532688,5.89028479 5.43467312,5.89028479 5.66247896,5.66247896 L10.3291456,0.995812289 C10.5569515,0.768006452 10.5569515,0.398660214 10.3291456,0.170854378 C10.1013398,-0.0569514592 9.73199355,-0.0569514592 9.50418771,0.170854378 L5.25,4.42504209 Z" id="path-1"></path>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="A4-没有操作的抽屉" transform="translate(-206.000000, -393.000000)">
+            <g id="编组" transform="translate(206.000000, 393.000000)">
+                <g id="icon-侧边收起" fill="#3C6EF0">
+                    <path d="M0,0 C6.627417,-1.21743675e-15 12,5.372583 12,12 L12,30 C12,36.627417 6.627417,42 0,42 L0,42 L0,42 L0,0 Z" id="矩形"></path>
+                </g>
+                <g id="icon/展开/black8/12*12" transform="translate(5.000000, 21.500000) scale(-1, -1) rotate(-90.000000) translate(-5.000000, -21.500000) translate(-0.500000, 18.500000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="路径-8" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

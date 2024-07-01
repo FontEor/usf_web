@@ -1,0 +1,120 @@
+@import "./mixin.scss";
+
+.apply-2022-choose-type {
+  padding-top: 65px;
+  .apply-2022-choose-type-title {
+    height: 38px;
+    h1 {
+      position: relative;
+      width: 372px;
+      height: 38px;
+      line-height: 38px;
+      text-align: left;
+      padding-left: 54px;
+      margin: 0 auto;
+      background: url("../assets/card.png") no-repeat left center;
+      background-size: 35px 28px;
+      font-size: 36px;
+      font-weight: normal;
+      color: #333;
+      @include font-family-jd;
+    }
+  }
+  .apply-2022-choose-type-container {
+    padding-top: 50px;
+    width: 380px * 2 + 70px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .apply-2022-choose-type-content {
+    position: relative;
+    width: 380px;
+    height: 350px;
+    background: #F6F8FF;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(51, 51, 51, 16 / 255);
+    &:first-child {
+      .apply-2022-choose-type-content-header {
+        background-image: url('../assets/system-apply.png');
+      }
+    }
+    &:last-child {
+      .apply-2022-choose-type-content-header {
+        background-image: url('../assets/usf-apply.png');
+      }
+    }
+    &:hover {
+      background: linear-gradient(180deg, rgba(246,248,255,1) 0%,rgba(227,237,255,1) 100%);
+      box-shadow: 0 2px 4px rgba(60, 110, 240, 100 / 255);
+      .apply-2022-choose-type-content-footer {
+        .el-button {
+          background-color: #2851C9;
+        }
+      }
+    }
+    h2 {
+      padding-left: 24px;
+      height: 28px;
+      font-size: 18px;
+      @include font-family-jd;
+      font-weight: normal;
+      color: #333;
+      line-height: 97px;
+      strong {
+        margin: 0 5px;
+        font-size: 24px;
+        color: #3C6EF0;
+      }
+    }
+  }
+  .apply-2022-choose-type-content-header {
+    height: 97px;
+    background: no-repeat top left;
+    background-size: cover;
+  }
+  p {
+    padding-left: 20px;
+    line-height: 27px;
+    font-size: 12px;
+    font-weight: normal;
+    color: #999999;
+    font-family: "PingFang SC", "Microsoft YaHei", "\9ED1\4F53", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  ul {
+    padding-left: 38px;
+    // padding: 20px 20px;
+    li {
+      position: relative;
+      line-height: 27px;
+      font-size: 12px;
+      font-weight: normal;
+      color: #999999;
+      @include font-family;
+      &::before {
+        content: " ";
+        width: 6px;
+        height: 6px;
+        background: linear-gradient(90deg, rgba(175,200,250,1) 0%,rgba(132,178,255,1) 46.246722027972034%,rgba(168,201,255,1) 100%);
+        border-radius: 10px;
+        position: absolute;
+        left: -8 - 6px;
+        top: 50%;
+        margin-top: -3px;
+      }
+    }
+  }
+  .apply-2022-choose-type-content-footer {
+    position: absolute;
+    bottom: 20px;
+    left: 24px;
+    .el-button {
+      width: 88px;
+      // height: 32px;
+      // line-height: 32px;
+      font-size: 14px;
+      background: rgba(60,110,240,1);
+      border-radius: 4px;
+    }
+  }
+}

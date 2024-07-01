@@ -1,0 +1,33 @@
+.apply-2022-sucess-container {
+    height: calc(100vh - 124px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .apply-2022-sucess {
+        height: 135 + 54 + 22px;
+        background: url(../assets/submit-success.png) no-repeat center 0;
+        background-size: 135px 158px; //142px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        h1 {
+            height: 24px;
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: 500;
+            color: #333333;
+            margin-bottom: 10px;
+        }
+
+        p {
+            height: 22px;
+            line-height: 22px;
+            font-size: 16px;
+            font-weight: normal;
+            color: #666666;
+        }
+    }
+}
